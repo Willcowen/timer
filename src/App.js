@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2022-09-20T00:00:00+05:30") - +new Date();
+    const difference = +new Date("2022-10-04T00:00:00+05:30") - +new Date();
     let timeLeft = {};
     if (difference > 0) {
       timeLeft = {
@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
       <div className="timer">
-      <h2>How long is it until we see each other again?!</h2>
+      <h2>When will we be reunited.... ⌛ </h2>
       <div>
         <h3>{timeLeft.days} Days</h3>
         <h3>{timeLeft.minutes} Minutes</h3>
